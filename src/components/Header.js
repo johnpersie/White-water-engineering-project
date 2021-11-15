@@ -7,7 +7,9 @@ const Header = () => {
       <header>
         <div className="header-logo">
           <img className="header-logo__img" src={Logo} alt="" />
+          <p className="header-logo__title">White Water Engineering</p>
         </div>
+        <input type="checkbox" id="nav-toggle" className="nav-toggle" />
         <nav>
           <ul>
             <li>
@@ -24,6 +26,9 @@ const Header = () => {
             </li>
           </ul>
         </nav>
+        <label htmlFor="nav-toggle" className="nav-toggle-label">
+          <span></span>
+        </label>
       </header>
     </div>
   );
